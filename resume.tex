@@ -1,0 +1,268 @@
+%-------------------------
+% Resume in Latex
+% Author : Sourabh Bajaj
+% Website: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.375in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{1pt}]
+
+%-------------------------
+% Custom commands
+
+\newcommand{\resumeRoleChange}[2]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{1pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubheadingWoItalic}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      {\footnotesize #3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\href{https://wathmal.xyz/}{\Large Sasitha Sonnadara}} & Email : \href{mailto:sasithawathmal@gmail.com}{sasithawathmal@gmail.com}\\
+  \textbf{Senior Software Engineer} & Web : \href{https://wathmal.xyz/}{https://wathmal.xyz}\\
+  {Gosford, NSW} & Mobile : 048 1140 791 \\
+  
+\end{tabular*}
+
+% SKILLS
+%--------PROGRAMMING SKILLS------------
+\section{Programming Skills}
+ \resumeSubHeadingListStart
+   \item{
+     \textbf{Languages}{: JavaScript, TypeScript, C\#, SQL, Python, HTML, CSS}
+     \hfill
+     
+   }
+ \item{
+     \textbf{JavaScript Technologies}{: React, ReactNative, Expo, Next.js, Node.js, Deno, Express.js, Mocha, Jest, Tailwind CSS}
+     
+   }
+  \item{
+     \textbf{Technologies}{: Supabase, Serverless Functions, Blazor, .NET Core}
+     
+   }
+
+ \item{
+     \textbf{Tools}{: Docker, Git, Azure, Azure AI, Large Language Models, REST APIs, gRPC, SonarCube, Agentic Coding, Expo EAS}
+     
+   }
+ \item{
+     \textbf{Database}{: Azure SQL, Postgress, SQLite, Redis}
+     
+   }
+
+ \resumeSubHeadingListEnd
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of Moaratuwa}{Colombo, Sri Lanka}
+      {Bachelor of Science in Computer Science and Engineering;  GPA: 3.60}{Aug. 2013 -- Apr. 2017}
+  \resumeSubHeadingListEnd
+
+
+% -----------EDUCATION-----------------
+\section{Certifications \& Courses}
+  \resumeSubHeadingListStart
+    \resumeSubheadingWoItalic
+      {Microsoft Certified: Azure Fundamentals}{Microsoft}
+      % https://learn.microsoft.com/api/credentials/share/en-us/SasithaSonnadaa-8921/BDE73AF8EF4234E7?sharingId=A9865B89FAC63ED1
+      {Credential Id: BDE73AF8EF4234E7}{Jan, 2025}
+    \resumeSubheadingWoItalic
+      {Generative AI with Large Language Models}{Coursera (Online)}
+      % https://learn.microsoft.com/api/credentials/share/en-us/SasithaSonnadaa-8921/BDE73AF8EF4234E7?sharingId=A9865B89FAC63ED1
+      {Credential Id: DQZ8UAWPWVG6}{Oct, 2023}
+
+  \resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+  \resumeSubheading
+    {Voqi Labs}{Gosford, NSW}
+    {Indie App Founder}{June 2025 - Present}
+    \resumeItemListStart
+      \resumeItem{\href{https://voqiapp.com/}{Voqi Mobile App}}
+        {Designed and launched a product offering from ground-up to cater to the needs of beginner and intermediate language learners to master vocabulary and fluency, filling the gap between learning a new language and speaking fluently in that language. \\
+        Current features include:
+        \begin{itemize}
+          \item Vocabulary Builder and Management
+          \item Vocabulary Practice with AI based real-world dialogues
+          \item AI based pronunciation analysis and feedback
+          \item Push Notifications, Social Auth, Accesssibility features
+        \end{itemize}
+        \textbf{Technologies:} React Native, Expo, Typescript, Nativewind, Supabase, Azure Speach AI, Groq AI Cloud, Node.js, Azure Web Apps, WebSockets
+        }
+    \resumeItemListEnd
+
+    \resumeSubheading
+      {Tally Group}{Melbourne (Remote)}
+      {Senior Software Engineer}{Dec 2023 - Present}
+      \resumeItemListStart
+        \resumeItem{Tariff Optimisation Costing Engine}
+          {Architected and implemented costing engine to estimate annual Electricity cost for different tariffs based on electricity usage for accounts and suggest optimal tariffs for the accounts with cost savings. Solution was developed using Azure Durable functions and C\#.}
+        \resumeItem{Optimisations}
+          {Optimised costing engine response time by 60\% by reducing amount of data retrivied, database table locking and using parallel processing for concecutive costing for tariff calculations. }
+        \resumeItem{Bill Reconciliation Workflows}
+          {Technical design and implementation of SaaS Electricity Billing Invoice reconciliation engine with C\# and Azure Durable functions to identify and raise disputes on overcharged bill amounts.}
+        % \resumeItem{Network Billing Management Platform}
+        % {Developed a Blazor WebAssembly micro frontend for managing network billing operations for electricity retailers, including bill validation, dispute management and remittance processing for different states with multiple formats.}     
+        \resumeItem{Electricity Network Settlement Platform}
+        {Full-stack development of Network Settlement section of the C\&I portal V2 (SaaS) using Blazor, C\# and Azure Durable Functions, including bill validation, dispute management and remittance processing for different states with multiple formats.}
+        \resumeItem{Blazor UI Development}
+        {Developer-led UI development of Network Settlement section of the C\&I portal V2 (SaaS) using Blazor and C\#, implementing user-focused features, closely collaborating with the PM and the primary client to ensure alignment with business requirements.}
+
+        \resumeItem{EnergyAustralia C\&I Portal}
+        {Led the technical development of the EnergyAustralia's C\&I portal using C\#, .NET \& Azure Functions, while managing a team of 4 offshore developers and delivering the project within the agreed timeframe.} 
+          % \resumeItem{}
+          % {Engineered a Blazor WebAssembly micro frontend for electricity retailers' network billing workflows, implementing modular components for bill validation, dispute management, and remittance processing that seamlessly integrated with the core platform through Web APIs, reducing billing processing time by 30\%.}
+      \resumeItemListEnd
+    \resumeSubheading
+      {Tally Group}{Melbourne}
+      {Software Engineer}{Mar 2020 - Nov 2023}
+      \resumeItemListStart
+        \resumeItem{Electricity Self-Service Mobile App}
+          {Architected and developed a white-labelled, cross-platform mobile app solution for electricity users using ReactNative, providing usage statistics, solar exports, cost saving insights and user transactions with opimisations for data heavy usage visualisations. This was used in "On by EnergyAustralia" digital suite.}
+        \resumeItem{Okta Integration}
+          % {Spearhead the migration to Okta authentication service from self-managed auth service for On by EnergyAustralia platfrom, implemented the solutions for ReactNative Mobile App, React \& Next.js based Web platform and .Net based API with intraction with Okta engineers.}
+          {Spearheaded the migration of the "On by EnergyAustralia" platform to Okta authentication, decommissioning a custom-built authentication service deliveryng enhanced security standards. Developed solutions for ReactNative Mobile App, React \& Next.js web applications, and a .Net API, collaborating with Okta engineers.}
+        \resumeItem{Electricity Self-Service Web Platform}
+          % {Developed new energy plan segments on Energy Australia's digital innovation platform          .}
+          {Developed segments of user sign-up journey for new Electricity plans in "On by EnergyAustralia" web platform using React.js and Next.js with integrations to API, CRM and Analytics. The platform was developed to rapidly market test the innvocative electricity plans and access. }
+        \resumeItem{Data Lake and Reporting}
+          {Designed and implemented data ingestion ETL jobs for the “On by EnergyAustralia” data lake platform with Webhooks, AWS Lambda \& AWS Glue. Developed analytical reports with PowerBI \& AWS Athena using the platform for SLA \& compliance monitoring and customer engagement}
+        \resumeItem{CI/CD Pipelines}
+          {Setup CI/CD pipelines for the projects using Azure pipelines, ARM templates and Azure Secrets for configs. Migrated all the existing build pipelines from BuildKite to Azure Dev Ops.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Sysco Labs}{Colombo, Sri Lanka}
+      {Software Engineer}{Mar 2017 - Jan 2020}
+      \resumeItemListStart
+        \resumeItem{CAKE Enterprise Reports}
+          {Developed reports segments for restaurant POS systems using React and D3.js, allowing owners to analyze aggregated multi-location sales, orders and tax with granular multi-metric filterings.}
+        \resumeItem{Document Generator API}
+          {Designed and developed a backend API to generate PDF and CSV exports using Node.js and headless browser APIs, used by multiple internal products to export user requested reports. Provided support to the teams when necessary.}
+        \resumeItem{CAKE Shop POS Sales Website}
+          {Developed a secure privately accessed E-commerce website using Ember.js, Node.js and MongoDB to send sales quotes and sell restaurant POS (point of sale) devices and online services.}
+        \resumeItem{CI/CD Pipeline Automation}
+          % {Dockerized existing applications and configured them to run on AWS ECS environment including best deployment practices such as remote configuration management and log forwarding}
+          {Contributed to company wide CI/CD automation by dockerizing exising projects, configuring AWS ECS environements and setting up log forwarding.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+    {Sysco Labs}{Colombo, Sri Lanka}
+    {Intern Software Engineer}{Mar 2017 - Jan 2020}
+      \resumeItemListStart
+        \resumeItem{Educate Lanka Charity Platform}
+          {Developed the EducateLanka charity foundation web platform utilizing a modern MERN (MongoDB, Express.js, React.js \& Node.js) stack. This involved designing and implementing a responsive user interface, developing student sponsoring and student search functionalities and developing a management portal for admins.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------------
+\section{Related Projects}
+  \resumeSubHeadingListStart
+    % \resumeSubItem{\href{https://voqiapp.com/}{Voqi Mobile App}}
+    %   {React Native and Expo based mobile app allowing language learners to master vocabulary and fluency by letting users build their own vocabulary and practice them with AI based real-world dialogues, providing users with objective feedback on their pronunciation accuracy through speech based AI analysis.\\
+    %   Currently available on the Apple App Store and Google Play Store.\\
+    %   \textbf{Technologies:} React Native, Expo, Typescript, Nativewind, Supabase, Azure Speach AI, Groq AI Cloud}
+      \resumeSubItem{\href{https://github.com/wathmal/MMM-Hevy}{Hevy MagicMirror Plugin}}
+      {Open source plugin for MagicMirror platform to display srength training workout details \& muscle split from the data of Hevy App using SVG and Node.js.\\
+      \textbf{Technologies:} Node.js, SVG, HTML, REST APIs}
+    % \resumeSubItem{WireMe IoT Platform}
+    %   {Scratch based Open Source Hardware \& Software IoT (Internet of Things) platform to enable layman users to setup and automate IoT workflows. A paper was published at IEEE named "WireMe IoT Platform for Everyone" based on the work of this platform. }
+    \resumeSubItem{\href{https://github.com/wathmal/sinhala-ocr}{Sinhala OCR Machine Learning Model}}
+      {Developed an open-source Optical Character Recognition (OCR) model for Sinhala printed characters using Convolutional Neural Networks (CNNs). Achieved over 90\% accuracy by training on a custom dataset and implementing advanced image preprocessing techniques. \\ 
+      \textbf{Technologies:} Python, Convolutional Neural Networks (CNNs), JavaScript, LeNet}
+
+  \resumeSubHeadingListEnd
+
+%
+
+% -----------AWARDS-----------------
+% \section{Awards}
+%   \resumeSubHeadingListStart
+%     \resumeSubheadingWoItalic
+%       {Best Paper Award}{Mercon 2017}
+%       {Credential Id: BDE73AF8EF4234E7}{Jan, 2025}
+
+%   \resumeSubHeadingListEnd
+
+%-------------------------------------------
+\end{document}
