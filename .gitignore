@@ -1,0 +1,38 @@
+# LaTeX intermediate and auxiliary files
+*.aux
+*.lof
+*.log
+*.lot
+*.fls
+*.out
+*.toc
+*.fmt
+*.fot
+*.cb
+*.cb2
+
+# SyncTeX
+*.synctex.gz
+*.synctex.gz(busy)
+
+# latexmk & related
+*.fdb_latexmk
+*.xdv
+
+# Beamer
+*.nav
+*.snm
+*.vrb
+
+# BibTeX/Biber
+*.bbl
+*.bcf
+*.blg
+*-blx.aux
+*.run.xml
+
+# Other common TeX artifacts
+*.dvi
+*-eps-converted-to.pdf
+
+
