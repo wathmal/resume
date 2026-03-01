@@ -99,9 +99,9 @@
 % SKILLS
 %--------PROGRAMMING SKILLS------------
 \section{Programming Skills}
- \resumeSubHeadingListStart
+ \begin{itemize}[leftmargin=*, itemsep=4pt, parsep=1pt]
    \item{
-     \textbf{Mobile \& Frontend}{: React Native, Expo, Expo EAS, React, Redux, Context API, Next.js, Blazor, Nativewind, Tailwind CSS}
+     \textbf{Mobile \& Frontend}{: React Native, Expo, Expo EAS, React, Redux, Context API, Next.js, Nativewind, Tailwind CSS}
    }
    \item{
      \textbf{Languages}{: TypeScript, JavaScript, C\#, Python, SQL, HTML, CSS}
@@ -110,7 +110,7 @@
      \textbf{Testing}{: Jest, React Native Testing Library, Mocha}
    }
    \item{
-     \textbf{Backend \& APIs}{: Node.js, Express.js, Deno, REST APIs, gRPC, WebSockets, Supabase, Serverless Functions, .NET Core}
+     \textbf{Backend \& APIs}{: Node.js, Express.js, REST APIs, gRPC, WebSockets, Supabase, Serverless Functions, .NET Core}
    }
    \item{
      \textbf{Cloud, DevOps \& Tools}{: Git, GitHub, JIRA, Docker, Azure, GCP (Pub/Sub, Cloud Run), Vercel, CI/CD Pipelines, SonarQube, Sentry}
@@ -121,7 +121,7 @@
    \item{
      \textbf{Databases}{: PostgreSQL, Azure SQL, SQLite, Redis}
    }
- \resumeSubHeadingListEnd
+ \end{itemize}\vspace{-5pt}
 
 %-----------EDUCATION-----------------
 \section{Education}
@@ -155,53 +155,54 @@
     {Indie Mobile App Founder}{June 2025 - Present}
     \resumeItemListStart
       \resumeItem{\href{https://voqiapp.com/}{Voqi Mobile App}}
-      {Designed and launched a language-practice mobile app from scratch, featuring vocabulary management, AI-powered practice with real-world dialogues, speech-based pronunciation analysis with feedback, push notifications and social auth. Available on the App Store and Google Play. \\
-      \textbf{Technologies:} React Native, Expo, TypeScript, Nativewind, Supabase, Azure Speech AI, Groq AI Cloud, Node.js, WebSockets
-      }
-\resumeItemListEnd
+        {Designed and launched a language-practice mobile app from scratch, featuring vocabulary management, AI-powered practice with real-world dialogues, speech-based pronunciation analysis with feedback, push notifications and social auth. Available on the App Store and Google Play. \\
+        \textbf{Technologies:} React Native, Expo, TypeScript, Nativewind, Supabase, Azure Speech AI, Groq AI Cloud, Node.js, WebSockets
+        }
+    \resumeItemListEnd
 
-    \resumeSubheading
-      {Tally Group}{Melbourne (Remote)}
-      {Senior Software Engineer}{Dec 2023 - Present}
-      \resumeItemListStart
-        \resumeItem{Multi Tenant Mobile Push Notifications}
+  \resumeSubheading
+    {Tally Group}{Melbourne (Remote)}
+    {Senior Software Engineer}{Dec 2023 - Present}
+    \resumeItemListStart
+      \resumeItem{Multi Tenant Mobile Push Notifications}
         {Designed and built an event-driven, multi-tenant push notification platform for white-label React Native apps, processing billing CDC events via GCP Pub/Sub and delivering personalised notifications through Expo EAS (APNS/FCM) with tenant-isolated token management, CMS-managed templates, and automated delivery receipt tracking on Cloud Run (Node.js/Fastify).}
+      \resumeItem{Tariff Optimisation Costing Engine}
+        {Architected and implemented costing engine to estimate annual Electricity cost for different tariffs based on electricity usage for accounts and suggest optimal tariffs for the accounts with cost savings. Solution was developed using Azure Durable functions and C\#.}
+      \resumeItem{Optimisations}
+        {Optimised costing engine response time by 60\% by reducing amount of data retrieved, database table locking and using parallel processing for consecutive costing for tariff calculations. }
+      \resumeItem{Bill Reconciliation Workflows}
+        {Technical design and implementation of SaaS Electricity Billing Invoice reconciliation engine with C\# and Azure Durable functions to identify and raise disputes on overcharged bill amounts.}
+      % \resumeItem{Network Billing Management Platform}
+      % {Developed a Blazor WebAssembly micro frontend for managing network billing operations for electricity retailers, including bill validation, dispute management and remittance processing for different states with multiple formats.}     
+      \resumeItem{Electricity Network Settlement Platform}
+      {Full-stack development of Network Settlement section of the C\&I portal V2 (SaaS) using Blazor, C\# and Azure Durable Functions, including bill validation, dispute management and remittance processing for different states with multiple formats.}
+      \resumeItem{Blazor UI Development}
+      {Developer-led UI development of Network Settlement section of the C\&I portal V2 (SaaS) using Blazor and C\#, implementing user-focused features, closely collaborating with the PM and the primary client to ensure alignment with business requirements.}
 
-        \resumeItem{Tariff Optimisation Costing Engine}
-          {Architected and implemented costing engine to estimate annual Electricity cost for different tariffs based on electricity usage for accounts and suggest optimal tariffs for the accounts with cost savings. Solution was developed using Azure Durable functions and C\#.}
-        \resumeItem{Optimisations}
-          {Optimised costing engine response time by 60\% by reducing amount of data retrieved, database table locking and using parallel processing for consecutive costing for tariff calculations. }
-        \resumeItem{Bill Reconciliation Workflows}
-          {Technical design and implementation of SaaS Electricity Billing Invoice reconciliation engine with C\# and Azure Durable functions to identify and raise disputes on overcharged bill amounts.}
-        % \resumeItem{Network Billing Management Platform}
-        % {Developed a Blazor WebAssembly micro frontend for managing network billing operations for electricity retailers, including bill validation, dispute management and remittance processing for different states with multiple formats.}     
-        \resumeItem{Electricity Network Settlement Platform}
-        {Full-stack development of Network Settlement section of the C\&I portal V2 (SaaS) using Blazor, C\# and Azure Durable Functions, including bill validation, dispute management and remittance processing for different states with multiple formats.}
-        \resumeItem{Blazor UI Development}
-        {Developer-led UI development of Network Settlement section of the C\&I portal V2 (SaaS) using Blazor and C\#, implementing user-focused features, closely collaborating with the PM and the primary client to ensure alignment with business requirements.}
-
-        \resumeItem{EnergyAustralia C\&I Portal}
-        {Led the technical development of the EnergyAustralia's C\&I portal using C\#, .NET \& Azure Functions, while managing a team of 4 offshore developers and delivering the project within the agreed timeframe.} 
-          % \resumeItem{}
-          % {Engineered a Blazor WebAssembly micro frontend for electricity retailers' network billing workflows, implementing modular components for bill validation, dispute management, and remittance processing that seamlessly integrated with the core platform through Web APIs, reducing billing processing time by 30\%.}
-      \resumeItemListEnd
-    \resumeSubheading
-      {Tally Group}{Melbourne}
-      {Software Engineer}{Mar 2020 - Nov 2023}
-      \resumeItemListStart
-        \resumeItem{Electricity Self-Service Mobile App}
-          {Architected and developed a white-labelled, cross-platform mobile app solution for electricity users using ReactNative, providing usage statistics, solar exports, cost saving insights and user transactions with optimisations for data heavy usage visualisations. This was used in "On by EnergyAustralia" digital suite.}
-        \resumeItem{Okta Integration}
-          % {Spearhead the migration to Okta authentication service from self-managed auth service for On by EnergyAustralia platfrom, implemented the solutions for ReactNative Mobile App, React \& Next.js based Web platform and .Net based API with intraction with Okta engineers.}
-          {Spearheaded the migration of the "On by EnergyAustralia" platform to Okta authentication, decommissioning a custom-built authentication service delivering enhanced security standards. Developed solutions for ReactNative Mobile App, React \& Next.js web applications, and a .Net API, collaborating with Okta engineers.}
-        \resumeItem{Electricity Self-Service Web Platform}
-          % {Developed new energy plan segments on Energy Australia's digital innovation platform          .}
-          {Developed segments of user sign-up journey for new Electricity plans in "On by EnergyAustralia" web platform using React.js and Next.js with integrations to API, CRM and Analytics. The platform was developed to rapidly market test the innovative electricity plans and access. }
-        \resumeItem{Data Lake and Reporting}
-          {Designed and implemented data ingestion ETL jobs for the “On by EnergyAustralia” data lake platform with Webhooks, AWS Lambda \& AWS Glue. Developed analytical reports with PowerBI \& AWS Athena using the platform for SLA \& compliance monitoring and customer engagement}
-        \resumeItem{CI/CD Pipelines}
-          {Setup CI/CD pipelines for the projects using Azure pipelines, ARM templates and Azure Secrets for configs. Migrated all the existing build pipelines from BuildKite to Azure Dev Ops.}
-      \resumeItemListEnd
+      \resumeItem{EnergyAustralia C\&I Portal}
+      {Led the technical development of the EnergyAustralia's C\&I portal using C\#, .NET \& Azure Functions, while managing a team of 4 offshore developers and delivering the project within the agreed timeframe.} 
+        % \resumeItem{}
+        % {Engineered a Blazor WebAssembly micro frontend for electricity retailers' network billing workflows, implementing modular components for bill validation, dispute management, and remittance processing that seamlessly integrated with the core platform through Web APIs, reducing billing processing time by 30\%.}
+    \resumeItemListEnd
+  \resumeSubheading
+    {Tally Group}{Melbourne}
+    {Software Engineer}{Mar 2020 - Nov 2023}
+    \resumeItemListStart
+      \resumeItem{Electricity Self-Service Mobile App}
+        {Architected and developed a white-labelled, cross-platform mobile app solution for electricity users using ReactNative, providing usage statistics, solar exports, cost saving insights and user transactions with optimisations for data heavy usage visualisations. This was used in "On by EnergyAustralia" digital suite.}
+      \resumeItem{Testing}
+        {Built confidence in key mobile UI flows by writing component tests with React Native Testing Library, covering edge cases and regressions as features evolved.}
+      \resumeItem{Okta Integration}
+        % {Spearhead the migration to Okta authentication service from self-managed auth service for On by EnergyAustralia platfrom, implemented the solutions for ReactNative Mobile App, React \& Next.js based Web platform and .Net based API with intraction with Okta engineers.}
+        {Spearheaded the migration of the "On by EnergyAustralia" platform to Okta authentication, decommissioning a custom-built authentication service delivering enhanced security standards. Developed solutions for ReactNative Mobile App, React \& Next.js web applications, and a .Net API, collaborating with Okta engineers.}
+      \resumeItem{Electricity Self-Service Web Platform}
+        % {Developed new energy plan segments on Energy Australia's digital innovation platform          .}
+        {Developed segments of user sign-up journey for new Electricity plans in "On by EnergyAustralia" web platform using React.js and Next.js with integrations to API, CRM and Analytics. The platform was developed to rapidly market test the innovative electricity plans and access. }
+      \resumeItem{Data Lake and Reporting}
+        {Designed and implemented data ingestion ETL jobs for the “On by EnergyAustralia” data lake platform with Webhooks, AWS Lambda \& AWS Glue. Developed analytical reports with PowerBI \& AWS Athena using the platform for SLA \& compliance monitoring and customer engagement}
+      \resumeItem{CI/CD Pipelines}
+        {Setup CI/CD pipelines for the projects using Azure pipelines, ARM templates and Azure Secrets for configs. Migrated all the existing build pipelines from BuildKite to Azure Dev Ops.}
+    \resumeItemListEnd
 
     \resumeSubheading
       {Sysco Labs}{Colombo, Sri Lanka}
